@@ -1,0 +1,39 @@
+.container-gallery {
+  width: 1128px;
+}
+
+.gallery {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  transition: transform 0.7s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sl-overlay {
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper .sl-close {
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.sl-wrapper .sl-counter,
+.sl-wrapper .sl-navigation button.sl-next,
+.sl-wrapper .sl-navigation button.sl-prev {
+  color: #ffff;
+}
